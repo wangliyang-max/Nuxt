@@ -2,10 +2,10 @@ const Vue = require('vue')
 const server = require('express')();
 
 // express响应
-server.get("/", (req, res) => {
+server.get("/", (req, res, next) => {
     // 创建vue实例
     const app = new Vue({
-        template: '<div>Hello</div>'
+        template: '<div>Hello vue使用服务端渲染的方式</div>'
     })
 
     // 创建渲染函数
@@ -37,6 +37,33 @@ server.get("/", (req, res) => {
     // }).catch(err => {
     //     console.log(err);
     // })
+    next()
+})
+server.get("/api/home", (req, res) => {
+    // console.log("req请求信息：", req)
+    const {headers:{token}} = req
+    console.log("token", token)
+    if(token){
+        if(token === "123456"){
+            res.send({
+                code: 200,
+                msg: "登录成功",
+                data:{
+                    title: "跨域数据???",
+                }
+            })
+        }else{
+            res.send({
+                code: 401,
+                msg: "token失效"
+            })
+        }
+    }else{
+        res.send({
+            code: 401,
+            msg: "请登录"
+        })
+    }
 })
 
 server.listen(3001)

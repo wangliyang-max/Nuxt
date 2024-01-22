@@ -2,9 +2,11 @@ import Vue from 'vue'
 import { decode, parsePath, withoutBase, withoutTrailingSlash, normalizeURL } from 'ufo'
 
 import { getMatchedComponentsInstances, getChildrenComponentInstancesUsingFetch, promisify, globalHandleError, urlJoin, sanitizeComponent } from './utils'
-import NuxtError from './components/nuxt-error.vue'
-import NuxtLoading from './components/nuxt-loading.vue'
+import NuxtError from '..\\layouts\\error.vue'
+import NuxtLoading from '~/components/loading.vue'
 import NuxtBuildIndicator from './components/nuxt-build-indicator'
+
+import '..\\assets\\css\\transition.css'
 
 import _08edec2f from '..\\layouts\\app-header.vue'
 import _6f6c098b from '..\\layouts\\default.vue'

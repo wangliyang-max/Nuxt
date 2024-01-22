@@ -35,23 +35,32 @@ export default {
         path: '/index',//路由路径
         component: resolve(__dirname, 'pages/index.vue')//显示组件
       })
-      
+
     }
   },
 
   /*
   ** loading样式
   */
-  loading: { color: '#fff' },
+  // loading: { color: '#399', height: '5px' },
+  loading: '~/components/loading.vue',
+
   /*
   ** 全局样式
   */
   css: [
+    'assets/css/transition.css'
   ],
   /*
   ** 全局插件
   */
   plugins: [
+    // ~ 表示当前项目的根目录
+    '~/plugins/router',
+    {
+      src:"~/plugins/axios",
+      ssr:true//开启服务端渲染
+    }
   ],
   /*
   ** 开发模式的模块
@@ -62,7 +71,24 @@ export default {
   ** 模块
   */
   modules: [
+    '@nuxtjs/axios',
+    '@nuxtjs/proxy'
   ],
+  axios:{
+    proxy:true, // 开启axios跨域
+    // prefix:'api'//配置基本Url
+  },
+  proxy:{
+    '/api/':{
+      // 配置代理地址
+      target: 'http://localhost:3001',
+      changeOrigin:true,//跨域
+      // pathRewrite: {
+      //   '^/api': '' // 重写路径
+      // }
+    }
+  },
+
   /*
   ** 打包配置
   */
