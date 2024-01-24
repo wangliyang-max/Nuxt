@@ -17,10 +17,8 @@ export default {
     // - query：query参数信息
     // - req：请求的req信息
     // - res：响应的res信息
-
     // 强跳转到登录页面
     // redirect("/login");
-
     // 全局守卫业务
     console.log("组件前置独享守卫 —— 页面布局");
   },

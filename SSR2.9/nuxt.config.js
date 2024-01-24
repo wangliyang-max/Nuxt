@@ -72,7 +72,8 @@ export default {
   */
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/proxy'
+    '@nuxtjs/proxy',
+    'cookie-universal-nuxt'
   ],
   axios:{
     proxy:true, // 开启axios跨域

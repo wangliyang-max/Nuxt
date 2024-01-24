@@ -1,4 +1,4 @@
-export default ({$axios, redirect, route, store})=>{
+export default ({$axios, redirect, route, store, app:{$cookies}})=>{
   // axios的配置
 
   // 基本配置
@@ -6,8 +6,8 @@ export default ({$axios, redirect, route, store})=>{
   // 请求拦截
   $axios.onRequest((config)=>{
     // 请求之前处理，添加token
-    // config.headers.token = '123456'
-    console.log("请求拦截器", config.headers)
+    config.headers.token = store.state.user.token
+    console.log("请求拦截器", config)
     return config
   })
   // 响应拦截
@@ -16,17 +16,14 @@ export default ({$axios, redirect, route, store})=>{
       console.log("响应拦截器", res.data)
       return res.data
     }else{
-        if(res.data.code===401){
-            // 401是未登录，未登录跳转到登录页面
-            redirect('/login')
-          }else{
-            // 其他错误
+        if(res.data.code===2 && route.fullPath!=='/login'){
+          redirect('/login?path='+route.fullPath)
         }
     }
   })
   // 错误处理
   $axios.onError((err)=>{
-    return error
+    return err
   })
 
 }

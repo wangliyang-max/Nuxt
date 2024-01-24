@@ -3,29 +3,25 @@
     "name": "goods",
     "path": "/goods",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\goods\\\\index.vue",
-    "chunkName": "pages/goods/index",
-    "_name": "_142857fc"
+    "chunkName": "pages/goods/index"
   },
   {
     "name": "login",
     "path": "/login",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\login.vue",
-    "chunkName": "pages/login",
-    "_name": "_ac95f1da"
+    "chunkName": "pages/login"
   },
   {
     "name": "reg",
     "path": "/reg",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\reg.vue",
-    "chunkName": "pages/reg",
-    "_name": "_866d0184"
+    "chunkName": "pages/reg"
   },
   {
     "name": "user",
     "path": "/user",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\user.vue",
-    "chunkName": "pages/user",
-    "_name": "_0e55f5de"
+    "chunkName": "pages/user"
   },
   {
     "path": "/goods/comment",
@@ -36,32 +32,27 @@
         "name": "goods-comment",
         "path": "",
         "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\goods\\\\comment\\\\index.vue",
-        "chunkName": "pages/goods/comment/index",
-        "_name": "_2bbb5093"
+        "chunkName": "pages/goods/comment/index"
       },
       {
         "name": "goods-comment-uid",
         "path": ":uid",
         "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\goods\\\\comment\\\\_uid.vue",
-        "chunkName": "pages/goods/comment/_uid",
-        "_name": "_547c5e60"
+        "chunkName": "pages/goods/comment/_uid"
       }
-    ],
-    "_name": "_d2edf5e2"
+    ]
   },
   {
     "name": "test-secondRouter",
     "path": "/test/secondRouter",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\test\\\\secondRouter.vue",
-    "chunkName": "pages/test/secondRouter",
-    "_name": "_1185ef96"
+    "chunkName": "pages/test/secondRouter"
   },
   {
     "name": "index",
     "path": "/",
     "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\index.vue",
-    "chunkName": "pages/index",
-    "_name": "_3fe53808"
+    "chunkName": "pages/index"
   },
   {
     "name": "goods-id",
@@ -73,23 +64,19 @@
         "name": "goods-id-producer",
         "path": "producer",
         "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\goods\\\\_id\\\\producer.vue",
-        "chunkName": "pages/goods/_id/producer",
-        "_name": "_15a9b27c"
+        "chunkName": "pages/goods/_id/producer"
       },
       {
         "name": "goods-id-sid",
         "path": ":sid?",
         "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\goods\\\\_id\\\\_sid.vue",
-        "chunkName": "pages/goods/_id/_sid",
-        "_name": "_c5687d0e"
+        "chunkName": "pages/goods/_id/_sid"
       }
-    ],
-    "_name": "_7b02eeea"
+    ]
   },
   {
     "name": "home",
     "path": "/index",
-    "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\index.vue",
-    "_name": "_3fe53808"
+    "component": "D:\\\\nox\\\\yang_test\\\\Nuxt\\\\Nuxt\\\\SSR2.9\\\\pages\\\\index.vue"
   }
 ]
